@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .emotions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .emotion-card {
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .emotion-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .happy { background-color: #FFD700; color: #333; }
+        .sad { background-color: #4169E1; }
+        .angry { background-color: #FF4500; }
+        .calm { background-color: #90EE90; color: #333; }
+        .excited { background-color: #FF69B4; }
+        .anxious { background-color: #9370DB; }
+        
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background-color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>How Are You Feeling?</h1>
+            <p>Select an emotion to explore</p>
+        </div>
+        
+        <div class="emotions-grid">
+            <div class="emotion-card happy">😊 Happy</div>
+            <div class="emotion-card sad">😢 Sad</div>
+            <div class="emotion-card angry">😠 Angry</div>
+            <div class="emotion-card calm">😌 Calm</div>
+            <div class="emotion-card excited">🤩 Excited</div>
+            <div class="emotion-card anxious">😰 Anxious</div>
+        </div>
+        
+        <center>
+            <a href="index.html" class="back-button">Back to Home</a>
+        </center>
+    </div>
+</body>
+</html>
